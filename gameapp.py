@@ -37,11 +37,31 @@ CLUE_QUESTIONS = {
     "Is it a type of stationery?": lambda word: word == "pencil",
     "Is it round in shape?": lambda word: word == "pizza",
     "Is it bigger than a person?": lambda word: word in ["elephant", "rocket"],
-    "Is it commonly found in a classroom?": lambda word: word in ["chair", "pencil"]
+    "Is it commonly found in a classroom?": lambda word: word in ["chair", "pencil"],
+    "Is it used for transportation to space?": lambda word: word == "rocket",
+    "Does it have tusks?": lambda word: word == "elephant",
+    "Is it a wild cat?": lambda word: word == "tiger",
+    "Can it be played with a pick?": lambda word: word == "guitar",
+    "Is it often sliced before eating?": lambda word: word == "pizza",
+    "Is it typically red or green?": lambda word: word == "apple",
+    "Is it used for writing or drawing?": lambda word: word == "pencil",
+    "Is it used to sit on?": lambda word: word == "chair",
+    "Does it roar?": lambda word: word == "tiger",
+    "Can it be found in a zoo?": lambda word: word == "elephant",
+    "Is it made with tomato sauce and cheese?": lambda word: word == "pizza",
+    "Is it found in an orchestra or band?": lambda word: word == "guitar",
+    "Is it used to launch satellites?": lambda word: word == "rocket",
+    "Does it grow on trees?": lambda word: word == "apple",
+    "Can it be sharpened?": lambda word: word == "pencil",
+    "Does it help support your back?": lambda word: word == "chair",
+    "Does it live in a herd?": lambda word: word == "elephant",
+    "Can it be hunted in the wild?": lambda word: word == "tiger",
+    "Is it a predator?": lambda word: word == "tiger",
+    "Is it cooked in an oven?": lambda word: word == "pizza"
 }
 
 state = st.session_state.game_state
-st.title("🕹️ Multi-Game Bot")
+st.title("🕹️ Multi-Game Bot Agent")
 
 # ------------------ MAIN MENU ------------------ #
 if state["_next"] == "menu":
