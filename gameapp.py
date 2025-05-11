@@ -29,9 +29,9 @@ CLUE_QUESTIONS = {
     "Is it a piece of furniture?": lambda w: w == "chair",
     "Is it a tool for writing or drawing?": lambda w: w == "pencil",
     "Is it a fruit?": lambda w: w == "apple",
-	"Is it round in shape?": lambda word: word == "pizza",
-	"Does it have tusks?": lambda w: w == "elephant",
-	"Is it a big striped cat?": lambda w: w == "tiger",
+    "Is it round in shape?": lambda word: word == "pizza",
+    "Does it have tusks?": lambda w: w == "elephant",
+    "Is it a big striped cat?": lambda w: w == "tiger",
 }
 
 state = st.session_state.game_state
